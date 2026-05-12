@@ -23,5 +23,8 @@
     "transform": {},
     "testEnvironment": "node",
     "testMatch": ["**/tests/**/*.test.js"]
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
