@@ -102,7 +102,7 @@ function generateEmail(name, index) {
 // Main seed function
 function seed() {
   mkdirSync(join(__dirname, '../data'), { recursive: true });
-  const db = new Database(join(__dirname, '../data/salary.db'));
+  const db = new Database(process.env.DB_PATH || join(__dirname, '../data/salary.db'));
 
   db.pragma('journal_mode = WAL');
   db.pragma('synchronous = OFF'); // Speed for bulk inserts

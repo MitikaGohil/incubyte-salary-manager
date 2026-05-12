@@ -10,7 +10,7 @@ let db;
 export function getDb(dbPath = null) {
   if (db) return db;
 
-  const resolvedPath = dbPath || join(__dirname, '../../data/salary.db');
+  const resolvedPath = dbPath || process.env.DB_PATH || join(__dirname, '../../data/salary.db');
   db = new Database(resolvedPath);
 
   // Performance pragmas

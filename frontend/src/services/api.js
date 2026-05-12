@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.DEV ? 'http://localhost:3001/api' : '/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
 });
 
 const asArray = (value) => (Array.isArray(value) ? value : []);

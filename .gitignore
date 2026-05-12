@@ -1,0 +1,12 @@
+backend/node_modules/
+frontend/node_modules/
+frontend/dist/
+.env
+.env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+backend/.env
+frontend/.env
+backend/data/*.db-shm
+backend/data/*.db-wal
